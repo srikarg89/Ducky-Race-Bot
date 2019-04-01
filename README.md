@@ -5,7 +5,7 @@ Roast your friends in [Ducky Race](https://www.arcademics.com/games/ducky-race) 
 - [OpenCV](https://opencv.org/)
 - [Pyautogui](https://pyautogui.readthedocs.io/en/latest/)
 
-## Information
+## How it works
 The code contains two main sections: Interfacing with the game and classification.
 The program finds the lcoations of the text boxes and takes pictures of them.
 Using contour matching, the code classifies each of the numbers, finds the correct answer, and clicks on it.
