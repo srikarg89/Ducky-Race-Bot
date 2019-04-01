@@ -1,9 +1,7 @@
 #C:\Users\Srikar\Documents\MyProjects\NeuralNetworks\duckyracetest
 import pyautogui
 import time
-#import pytesseract
 import cv2
-#from PIL import Image
 import numpy
 
 def dictToContours(pics_names):
@@ -74,7 +72,7 @@ location.append(pyautogui.locateOnScreen('pics/answer3.png',confidence=0.99))
 location.append(pyautogui.locateOnScreen('pics/answer4.png',confidence=0.99))
 question_loc = pyautogui.locateOnScreen('pics/question.png',confidence=0.9)
 print(location)
-for i in range(150):
+for i in range(150): #Arbitrary value, can be changed to a higher number or even infinity
 
     #Find question contours
     im = pyautogui.screenshot(region=(question_loc.left+100,question_loc.top+10, 250, 50))
@@ -126,4 +124,5 @@ for i in range(150):
         answers.append(value)
         count += 1
 
+    #Wait for the game to load the next question
     time.sleep(0.1)
