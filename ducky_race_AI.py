@@ -1,4 +1,3 @@
-#C:\Users\Srikar\Documents\MyProjects\NeuralNetworks\duckyracetest
 import pyautogui
 import time
 import cv2
